@@ -1,0 +1,73 @@
+.@{btn-prefix-cls} {
+  // small button
+  &-wb&-sm {
+    height: 24px;
+    line-height: 24px;
+    padding: 0 15px;
+  }
+  // default button
+  &-wb {
+    height: 32px;
+    line-height: 32px;
+    padding: 0px 20px;
+    box-shadow: 0px 1px 5px 0px rgba(13, 152, 206, 0.4);
+    &, &:hover, &:active, &:focus {
+      border-color: transparent;
+    }
+    >span {
+      letter-spacing: 4px;
+      margin-right: -4px;
+    }
+    >.anticon + span {
+      margin-left: -4px;
+    }
+  }
+  &-bb {
+    background-color: @primary-color;
+    color: #fff;
+    height: 32px;
+    line-height: 32px;
+    padding: 0px 20px;
+    &, &:hover, &:active, &:focus {
+      color: #fff;
+      border-color: transparent;
+      background-color: @primary-color;
+    }
+    >* {
+      letter-spacing: 4px;
+      margin-right: -4px;
+    }
+  }
+  &-bb&-sm {
+    height: 24px;
+    line-height: 24px;
+    padding: 0px 10px;
+  }
+  &-line {
+    background-color: transparent;
+    color: #a0a0a0;
+    height: 32px;
+    line-height: 32px;
+    padding: 0px 15px;
+    border-color: #e2e2e2;
+    box-shadow: none;
+    &:hover, &:active, &:focus {
+      background-color: #fff;
+      box-shadow: 0px 1px 5px 0px rgba(13, 152, 206, 0.4);
+      color: @primary-color;
+      border-color: transparent;
+    }
+    &:focus {
+      border-color: @primary-color;
+      box-shadow: none;
+    }
+    >* {
+      letter-spacing: 4px;
+      margin-right: -4px;
+    }
+  }
+  &-line&-sm {
+    height: 24px;
+    line-height: 24px;
+  }
+}

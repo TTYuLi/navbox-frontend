@@ -1,0 +1,30 @@
+.@{card-prefix-cls}{
+  &, &.white-bg, &.wb {
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.2);
+  }
+  &.grey-bg, &.gb {
+    background-color: #f9f9f9;
+  }
+  &.simple-gb {
+    background-color: #f3f3f3;
+    box-shadow: none;
+  }
+  &.white-bg-title {
+    border-radius: 4px;
+    .@{card-prefix-cls}-head {
+      border-bottom: 2px solid #e2e2e2;
+      &-title {
+        color: #333;
+      }
+    }
+    .@{card-prefix-cls}-extra {
+      color: #777;
+    }
+  }
+  &.light-brown-bg {
+    background: linear-gradient(120deg, #d0bc96, #d0caad);
+    border-radius: 4px;
+  }
+}

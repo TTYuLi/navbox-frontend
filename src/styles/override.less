@@ -1,0 +1,72 @@
+@primary-color      : #0d98ce;
+@btn-default-color  : @primary-color;
+// menu
+li.ant-menu-item {
+  outline: none;
+  &.ant-menu-item-selected {
+    background-color: transparent !important;
+    padding-right: 0px;
+    >span {
+      display: inline-block;
+      color: #fff;
+      >span.nav-text {
+        padding-right: 10px;
+        position: relative;
+      }
+    }
+    >span::before {
+      content: '';
+      display: table-cell;
+    }
+    >span::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 56%;
+      right: -58px;
+      width: 54%;
+      border-top: 1px solid #e8e8e8;
+      transform: translateY(50%);
+    }
+  }
+}
+// 折叠后字变为省略号
+.ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title {
+  left: -13px;
+  text-overflow: ellipsis;
+  padding: 0 32px !important;
+}
+// 折叠后箭头的变化位置
+.ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title .ant-menu-submenu-arrow {
+  opacity: .45;
+  transition: .3s;
+  display: block;
+  left: 40px;
+}
+// layout
+.ant-layout-sider {
+  background: linear-gradient(#33332F 15%, #60605E 50%,  #60605E 60%, #33332F 90%);
+}
+// 修改主题颜色
+.ant-menu-dark .ant-menu-inline.ant-menu-sub {
+  background: rgba(0,0,0,.6);
+}
+.ant-menu-dark, .ant-menu-dark .ant-menu-sub {
+  background: transparent;
+}
+.@{layout-prefix-cls}-content {
+  background-color: #f9f9f9;
+}
+// mod radio button styles
+.@{radio-prefix-cls}-button-wrapper-checked {
+  background: @radio-dot-color;
+  color: #fff;
+  &:hover {
+    color: #fff;
+  }
+}
+@import './override-modal.less';
+@import './override-card.less';
+@import './override-button.less';
+@import './override-data-table.less';
+@import './override-collapse.less';

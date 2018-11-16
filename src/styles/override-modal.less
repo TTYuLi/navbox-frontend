@@ -1,0 +1,46 @@
+.@{dialog-prefix-cls} {
+  &-close {
+    color: #a0a0a0;
+    &:hover {
+      color: #a0a0a0;
+    }
+  }
+  &-header {
+    background-color: #eee;
+    .@{dialog-prefix-cls}-title {
+      color: #a0a0a0;
+    }
+  }
+  &-footer {
+    text-align: center;
+    padding: 0 16px 32px 16px;
+    border: none;
+    button {
+      height: 36px;
+      line-height: 36px;
+      padding: 0px 40px;
+      box-shadow: 0px 1px 5px 0px rgba(13, 152, 206, 0.4);
+      &, &:hover, &:active, &:focus {
+        border-color: transparent;
+      }
+      >span {
+        letter-spacing: 4px;
+        margin-right: -4px;
+      }
+    }
+    button + button {
+      margin-left: 80px;
+      background-color: @primary-color;
+      color: #fff;
+      &, &:hover, &:active, &:focus {
+        color: #fff;
+        border-color: transparent;
+        background-color: @primary-color;
+      }
+      >* {
+        letter-spacing: 4px;
+        margin-right: -4px;
+      }
+    }
+  }
+}
